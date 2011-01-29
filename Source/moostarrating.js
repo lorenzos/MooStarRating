@@ -15,24 +15,26 @@ provides: [MooStarRating]
 ...
 */
 
+var MooStarRatingImages = {
+	defaultImageFolder: '',
+	defaultImageEmpty:  'star_empty.png',
+	defaultImageFull:   'star_full.png',
+	defaultImageHover:  null
+};
+
 var MooStarRating = new Class({
 
 	Implements: [Options, Events],
-	
-	defaultImageFolder: '',
-	defaultImageEmpty:  'star_empty.png',
-	defaultimageFull:   'star_full.png',
-	defaultimageHover:  null,
 
 	options: {
 		form: null,
 		radios: 'rating',
 		selector: '',
 		linksClass: 'star',
-		imageFolder: this.defaultImageFolder,
-		imageEmpty:  this.defaultImageEmpty,
-		imageFull:   this.defaultimageFull,
-		imageHover:  this.defaultimageHover,
+		imageFolder: MooStarRatingImages.defaultImageFolder,
+		imageEmpty:  MooStarRatingImages.defaultImageEmpty,
+		imageFull:   MooStarRatingImages.defaultImageFull,
+		imageHover:  MooStarRatingImages.defaultImageHover,
 		width: 16,
 		height: 16,
 		half: false,
@@ -47,6 +49,13 @@ var MooStarRating = new Class({
 	currentIndex: -1,
 
 	initialize: function(options) {
+		
+		// Setup options
+		this.setOptions({
+			imageFolder: MooStarRatingImages.defaultImageFolder,
+			imageEmpty:  MooStarRatingImages.defaultImageEmpty,
+			imageFull:   MooStarRatingImages.defaultImageFull,
+			imageHover:  MooStarRatingImages.defaultImageHover });
 		this.setOptions(options);
 		
 		// Fix image folder
@@ -61,7 +70,7 @@ var MooStarRating = new Class({
 			this.options.imageFolder + this.options.imageEmpty,
 			this.options.imageFolder + this.options.imageFull,
 			this.options.imageFolder + this.options.imageHover
-		]); } catch (e) { console.log(e); };
+		]); } catch (e) { };
 		
 		// Build radio selector
 		var formQuery = this.options.form;
@@ -82,9 +91,7 @@ var MooStarRating = new Class({
 		var widthOdd = width;
 		var height = this.options.height.toInt();
 		if (this.options.half) {
-			console.log(width);
 			width = (width / 2).toInt();
-			console.log(width);
 			widthOdd = widthOdd - width; }
 		$$(this.options.selector).each(function (item) {
 			

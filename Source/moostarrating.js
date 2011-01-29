@@ -124,7 +124,7 @@ var MooStarRating = new Class({
 				title = title.replace('[VALUE]', item.get('value'));
 				title = title.replace('[COUNT]', count);
 				if (this.options.tipTarget) this.stars[i].store('ratingTip', title);
-				this.stars[i].setProperty('title', title);
+				else this.stars[i].setProperty('title', title);
 			}
 			
 			// Click event

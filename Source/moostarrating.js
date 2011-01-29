@@ -18,6 +18,11 @@ provides: [MooStarRating]
 var MooStarRating = new Class({
 
 	Implements: [Options, Events],
+	
+	defaultImageFolder: '',
+	defaultImageEmpty:  'star_empty.png',
+	defaultimageFull:   'star_full.png',
+	defaultimageHover:  null,
 
 	options: {
 		form: null,

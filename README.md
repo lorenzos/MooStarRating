@@ -75,7 +75,8 @@ Syntax and options:
 	
 	var myRating = new MooStarRating(options);
 
-	#TEXT
+
+	#TXT
 	
 	options (object): 
 		Initial options for the class. Options are:

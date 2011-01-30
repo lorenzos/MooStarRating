@@ -66,8 +66,6 @@ Docs
 ----------
 
 Implements:
-
-	#PLAIN
 	
 	Options, Events
 

@@ -71,7 +71,11 @@ Implements:
 
 Syntax and options:
 
+	#JS
+	
 	var myRating = new MooStarRating(options);
+
+	#TEXT
 	
 	options (object): 
 		Initial options for the class. Options are:

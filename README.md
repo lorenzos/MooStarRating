@@ -74,6 +74,7 @@ Docs
 	var myRating = new MooStarRating(options);
 	
 **`options`** (*object*): Initial options for the class. Options are:
+
 - **`form`**: Target form name, ID or element.
 - **`radios`**: Target radio input boxes name (default `"rating"`)
 - **`half`**: `TRUE` if each star is used for two input values (dafult `FALSE`).

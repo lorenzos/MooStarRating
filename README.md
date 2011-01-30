@@ -39,7 +39,7 @@ JS sample:
 HTML code:
 
 	#HTML
-
+	
 	<!-- Basic form with "rating" radios -->
 	<form name="basic">
 	    <input type="radio" name="rating" value="1">
@@ -67,7 +67,7 @@ Docs
 
 Implements:
 
-	#TXT
+	#PLAIN
 	
 	Options, Events
 

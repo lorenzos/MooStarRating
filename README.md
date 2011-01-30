@@ -67,16 +67,13 @@ Docs
 
 Implements:
 
+	#TXT
+	
 	Options, Events
 
 Syntax and options:
 
-	#JS
-	
 	var myRating = new MooStarRating(options);
-
-
-	#TXT
 	
 	options (object): 
 		Initial options for the class. Options are:

@@ -12,6 +12,8 @@ How to use
 
 JS sample:
 
+	#JS
+	
 	// Basic usage, give only form name or ID
 	var basicRating = new MooStarRating({ form: 'basic' });
 	
@@ -35,6 +37,8 @@ JS sample:
 	});
 
 HTML code:
+
+	#HTML
 
 	<!-- Basic form with "rating" radios -->
 	<form name="basic">

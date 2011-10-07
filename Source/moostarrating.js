@@ -104,7 +104,7 @@ var MooStarRating = new Class({
 			
 			// Hide and replace
 			item.setStyle('display', 'none');
-			this.stars[i] = new Element('a').addClass(this.options.linksClass);
+			this.stars[i] = new Element('a', {title : item.get('title')}).addClass(this.options.linksClass);
 			this.stars[i].store('ratingIndex', i);
 			this.stars[i].setStyles({
 				'background-image': 'url("' + this.options.imageFolder + this.options.imageEmpty + '")',

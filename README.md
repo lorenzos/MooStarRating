@@ -1,5 +1,5 @@
-MooImageTip
-===========
+MooStarRating
+=============
 
 A Mootools plugin that creates a non-obstrusive star rating control based on a set of radio input boxes. 
 Based on Diego Alto's jQuery Star Rating Plugin.

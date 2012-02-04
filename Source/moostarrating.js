@@ -128,9 +128,11 @@ var MooStarRating = new Class({
 			}
 			
 			// Click event
-			this.stars[i].addEvent('click', function () { 
-				me.setCurrentIndex(this.retrieve('ratingIndex')); 
-				me.fireEvent('click', me.getValue());
+			this.stars[i].addEvent('click', function () {
+				if (!me.options.disabled) {
+					me.setCurrentIndex(this.retrieve('ratingIndex'));
+					me.fireEvent('click', me.getValue());
+				}
 			});
 			
 			// Go on

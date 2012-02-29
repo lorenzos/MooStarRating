@@ -1,6 +1,6 @@
 /*
 ---
-description: A plugin that creates a non-obstrusive star rating control based on a set of radio input boxes. Based on Diego Alto's jQuery Star Rating Plugin.
+description: A plugin that creates a non-obtrusive star rating control based on a set of radio input boxes. Based on Diego Alto's jQuery Star Rating Plugin.
 
 license: MIT-style
 

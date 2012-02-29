@@ -1,7 +1,7 @@
 MooStarRating
 =============
 
-A Mootools plugin that creates a non-obstrusive star rating control based on a set of radio input boxes. 
+A Mootools plugin that creates a non-obtrusive star rating control based on a set of radio input boxes. 
 Based on Diego Alto's jQuery Star Rating Plugin.
 
 ![Screenshot](https://github.com/lorenzos/MooStarRating/raw/master/Graphics/logo.png)

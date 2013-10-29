@@ -38,6 +38,7 @@ var MooStarRating = new Class({
 		width: 16,
 		height: 16,
 		half: false,
+		decheck: false,
 		tip: null,
 		tipTarget: null,
 		tipTargetType: 'text',
@@ -130,7 +131,9 @@ var MooStarRating = new Class({
 			// Click event
 			this.stars[i].addEvent('click', function () {
 				if (!me.options.disabled) {
-					me.setCurrentIndex(this.retrieve('ratingIndex'));
+					var index = this.retrieve('ratingIndex');
+					if (me.options.decheck && me.currentIndex == index) index = -1;
+					me.setCurrentIndex(index);
 					me.fireEvent('click', me.getValue());
 				}
 			});

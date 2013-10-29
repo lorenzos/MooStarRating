@@ -78,6 +78,7 @@ Docs
 - **`form`**: Target form name, ID or element.
 - **`radios`**: Target radio input boxes name (default `"rating"`)
 - **`half`**: `TRUE` if each star is used for two input values (dafult `FALSE`).
+- **`decheck`**: if `TRUE` clicking the same rating again will reset the control (dafult `FALSE`).
 - **`disabled`**: `TRUE` if user cannot set rate value (default `FALSE`, or `TRUE` if input radio boxes has got the `disabled` attribute).
 - **`linksClass`**: Links class name, for custom styling (default `"star"`).
 - **`imageFolder`**: Image folder path, relative or absolute (default `""`).

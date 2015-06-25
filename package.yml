@@ -2,7 +2,7 @@ name: MooStarRating
 author: lorenzo.stanco
 category: Interface
 tags: [star, rating, radio, form]
-demo: http://jsfiddle.net/UJJN7/438/
+demo: http://jsfiddle.net/UJJN7/458/
 docs: http://wiki.github.com/lorenzos/MooStarRating/docs
 current: 1.4
 sources:
